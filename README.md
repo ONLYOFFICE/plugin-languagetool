@@ -21,6 +21,6 @@ Detailed instructions can be found in [ONLYOFFICE API documentation](https://api
 
 ## Using your service
 
-You can install LanguageTool and send requests to it. 
+You can install LanguageTool to your own server and send requests to it. 
 
 To do so, you need to change the url address of the `serviceUrl` variable in the `./scripts/langTool.js` file.
