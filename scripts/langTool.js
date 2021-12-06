@@ -318,7 +318,14 @@ function checkInternetExplorer(){
             var separateLine = $('<div>', {
 				"class": 'separator horizontal display-none',
 			});
-
+			var context = $('<div>', {
+				html : el.context.text.slice(0, el.context.offset)
+					+ '<span style="color:red; font-weight: bold;">'
+					+ el.context.text.slice(el.context.offset,el.context.offset + el.context.length)
+					+ '</span>'
+					+ el.context.text.slice(el.context.offset + el.context.length)
+			});
+			context.appendTo('#div_'+ind);
             img_arrow.appendTo(img_container);
             caption_text.appendTo(caption);
             img_container.appendTo(caption);
